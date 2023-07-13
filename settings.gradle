@@ -1,16 +1,13 @@
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
+
+repositories {
+    google()
+    mavenCentral()
     }
+dependencies {
+    classpath 'com.google.dagger:hilt-android-gradle-plugin:2.46.1'
+
 }
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
+
 rootProject.name = "NotesApp"
 include ':app'
+
